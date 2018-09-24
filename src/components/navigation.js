@@ -9,12 +9,14 @@ class Navigation extends Component {
     { path: '/about/', name: 'About' },
     { path: '/works/', name: 'Works' },
     { path: '/access/', name: 'Access' },
-    { path: '/contact/', name: 'Contact' }
+    { path: '/contact/', name: 'Contact' },
+    { path: '/blog/', name: 'blog' },
   ]
 
   styles = {
     nav: {
       position: 'absolute',
+      top: '35px',
       right: 0
     },
     ul: {
@@ -22,7 +24,12 @@ class Navigation extends Component {
       display: 'flex'
     },
     li: {
-      marginLeft: '1.6rem'
+      marginLeft: '1.6rem',
+      marginRight: '1.6rem'
+    },
+    a: {
+      textDecoration: 'none',
+      color: '#fff'
     }
   }
 
@@ -34,8 +41,8 @@ class Navigation extends Component {
         { 
           this.items.map((data, index) => {
             return (
-              <li style={this.styles.li}>
-                <Link to={data.path} key={index}>{data.name}</Link>
+              <li key={index} style={this.styles.li}>
+                <Link to={data.path} style={this.styles.a}>{data.name}</Link>
               </li>
             )
           })
