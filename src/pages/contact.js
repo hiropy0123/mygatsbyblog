@@ -7,7 +7,13 @@ const ContactPage = () => (
   <Layout>
     <h1>Contact Form</h1>
     <p>メールフォーム送信テスト</p>
-    <form name="contactform" method="POST" action="thanks" data-netlify="true">
+    <form 
+      name="contactform" 
+      method="POST" 
+      action="thanks" 
+      data-netlify="true"
+      data-netlify-honypot="bot-field"
+    >
       <input type="hidden" name="contactform" value="contact" /> 
         <p>
           <label>Your Name: <input type="text" name="name" /></label>   
