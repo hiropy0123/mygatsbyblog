@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'サンプルサイト',
+    title: 'Code Log',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'サンプルサイト',
-        short_name: 'sample',
+        name: 'Code Log',
+        short_name: 'Code Log',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
