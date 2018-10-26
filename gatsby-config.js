@@ -42,5 +42,18 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-graphcms`,
+      options: {
+        endpoint: `https://api-apeast.graphcms.com/v1/cjnp60lw204ac01ijrnuvtbrw/master`,
+        token: `graphql_token`,
+        query: `{
+            allArtists {
+              id
+              name
+            }
+        }`,
+      },
+    },
   ],
 }

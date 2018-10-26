@@ -8,7 +8,7 @@ const ContactPage = () => (
     <h1>Contact Form</h1>
     <p>メールフォーム送信テスト</p>
     <form name="contactform" method="POST" action="thanks" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact" /> 
+      <input type="hidden" name="contactform" value="contact" /> 
 
       <div classList="form-group">
         <label>お名前<abbr title="required">*</abbr>
