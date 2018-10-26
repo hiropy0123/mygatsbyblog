@@ -42,18 +42,27 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-source-graphcms`,
-      options: {
-        endpoint: `https://api-apeast.graphcms.com/v1/cjnp60lw204ac01ijrnuvtbrw/master`,
-        token: `graphql_token`,
-        query: `{
-            allArtists {
-              id
-              name
-            }
-        }`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-graphcms`,
+    //   options: {
+    //     endpoint: `https://api-apeast.graphcms.com/v1/cjnp60lw204ac01ijrnuvtbrw/master`,
+    //     // token: `graphql_token`,
+    //     query: `query content($first: Int, $skip: Int, $where: InfoWhereInput, $orderBy: InfoOrderByInput) {
+    //       infoes: infoesConnection(first: $first, skip: $skip, where: $where, orderBy: $orderBy) {
+    //         edges {
+    //           node {
+    //             createdAt
+    //             updatedAt
+    //             status
+    //             id
+    //             date
+    //             headline
+    //             detail
+    //           }
+    //         }
+    //       }
+    //     }`,
+    //   },
+    // },
   ],
 }
