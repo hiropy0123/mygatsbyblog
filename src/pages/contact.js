@@ -8,7 +8,7 @@ const ContactPage = () => (
     <h1>Contact Form</h1>
     <p>メールフォーム送信テスト</p>
     <form 
-      name="contactform" 
+      name="contact" 
       method="POST" 
       data-netlify="true"
       data-netlify-honypot="bot-field"
