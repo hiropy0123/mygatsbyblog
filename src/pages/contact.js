@@ -10,23 +10,23 @@ const ContactPage = () => (
     <form name="contactform" method="POST" action="thanks" netlify>
 
       <div classList="form-group">
-        <label htmlfor="name">お名前<abbr title="required">*</abbr>
+        <label>お名前<abbr title="required">*</abbr>
         <input type="text" class="form-control" id="name" name="お名前" placeholder="お名前" maxlength="30" minlength="2" required autocomplete="name" />
         </label>
       </div>
       <div classList="form-group">
-        <label htmlfor="email">メールアドレス<abbr title="required">*</abbr>
+        <label>メールアドレス<abbr title="required">*</abbr>
         <input type="email" class="form-control" id="email" name="メールアドレス" placeholder="" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required autocomplete="email" />
         </label>
       </div>
       <div classList="form-group">
-        <label htmlfor="contact">お問い合わせ内容<abbr title="required">*</abbr>
+        <label>お問い合わせ内容<abbr title="required">*</abbr>
         <textarea class="form-control" id="contact" name="お問い合わせ内容" rows="8" required></textarea>
         </label>
       </div>
 
       <div classList="form-group">
-        <input type="submit" class="submit" value="送信する" />
+      <button type="submit">Send</button>
       </div>
     </form>
     <Link to="/">home</Link>
