@@ -12,17 +12,17 @@ const ContactPage = () => (
 
       <div classList="form-group">
         <label>お名前<abbr title="required">*</abbr>
-        <input type="text" class="form-control" id="name" name="お名前" placeholder="お名前" maxlength="30" minlength="2" required autocomplete="name" />
+        <input type="text" class="form-control" id="name" name="name" placeholder="お名前" maxlength="30" minlength="2" required autocomplete="name" />
         </label>
       </div>
       <div classList="form-group">
         <label>メールアドレス<abbr title="required">*</abbr>
-        <input type="email" class="form-control" id="email" name="メールアドレス" placeholder="" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required autocomplete="email" />
+        <input type="email" class="form-control" id="email" name="email" placeholder="" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required autocomplete="email" />
         </label>
       </div>
       <div classList="form-group">
         <label>お問い合わせ内容<abbr title="required">*</abbr>
-        <textarea class="form-control" id="contact" name="お問い合わせ内容" rows="8" required></textarea>
+        <textarea class="form-control" id="contact" name="content" rows="8" required></textarea>
         </label>
       </div>
 
