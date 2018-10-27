@@ -14,27 +14,9 @@ const ContactPage = () => (
       data-netlify-honypot="bot-field"
     >
     <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+    <input type="hidden" name="bot-field" value="" />
 
-
-      {/* <div classList="form-group">
+      <div classList="form-group">
         <label>お名前<abbr title="required">*</abbr>
         <input type="text" class="form-control" id="name" name="name" placeholder="お名前" maxlength="30" minlength="2" required autocomplete="name" />
         </label>
@@ -52,7 +34,7 @@ const ContactPage = () => (
 
       <div classList="form-group">
       <button type="submit">Send</button>
-      </div> */}
+      </div>
     </form>
     <Link to="/">home</Link>
   </Layout>
