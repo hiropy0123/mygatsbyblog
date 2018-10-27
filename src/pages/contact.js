@@ -33,7 +33,7 @@ const ContactPage = () => (
       </div>
 
       <div className="form-group">
-      <button type="submit">Send</button>
+      <button type="submit">送信</button>
       </div>
     </form>
     <Link to="/">home</Link>
