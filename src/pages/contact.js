@@ -13,7 +13,7 @@ const ContactPage = () => (
       data-netlify="true"
       data-netlify-honypot="bot-field"
     >
-    <input type="hidden" name="bot-field" />
+    <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Your Name: <input type="text" name="name" /></label>   
         </p>
